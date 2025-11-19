@@ -238,3 +238,70 @@ footer p {
   }
 }
 
+/* Sizing page */
+.sizing {
+  padding: 4rem 0;
+}
+
+.sizing h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.sizing-section {
+  background: var(--light-gray);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sizing-section h2 {
+  font-size: 1.4rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.sizing-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sizing-section li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+/* Make the size label stand out */
+.sizing-section li strong {
+  color: var(--text-dark);
+  font-weight: 600;
+  display: inline-block;
+  min-width: 110px; /* keeps labels aligned */
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .sizing {
+    padding: 2.5rem 0;
+  }
+
+  .sizing h1 {
+    font-size: 2rem;
+  }
+
+  .sizing-section {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .sizing-section li strong {
+    min-width: auto;
+    display: block;
+    margin-bottom: 0.1rem;
+  }
+}
+
+
