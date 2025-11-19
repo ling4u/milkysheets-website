@@ -1,0 +1,37 @@
+---
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{title} | Milky Sheets</title>
+  <link rel="stylesheet" href="/styles/global.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo">Milky Sheets™</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/products">Products</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; {new Date().getFullYear()} Milky Sheets™. All rights reserved.</p>
+      <p>Australian owned and designed in Sydney</p>
+    </div>
+  </footer>
+</body>
+</html>
