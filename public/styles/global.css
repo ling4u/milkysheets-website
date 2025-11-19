@@ -51,7 +51,7 @@ body {
 }
 
 .logo-img {
-  height: 50px;
+  height: 100px;
   width: auto;
 }
 
@@ -237,3 +237,4 @@ footer p {
     font-size: 1.2rem;
   }
 }
+
