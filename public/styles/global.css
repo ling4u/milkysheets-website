@@ -1,7 +1,7 @@
 /* Color scheme matching Milky Sheets */
 :root {
-  --primary-color: #2c5f2d;
-  --secondary-color: #97bc62;
+  --primary-color: #2ac4f4;
+  --secondary-color: #7dd3fc;
   --text-dark: #2c3e50;
   --text-light: #666;
   --background: #ffffff;
@@ -45,10 +45,14 @@ body {
 }
 
 .logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--primary-color);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
